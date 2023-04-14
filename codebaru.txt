@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>GORecyle</title>
+    <link rel="shortcut icon" href="/asset/1-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div>
+        <header>
+            <img id="logo" src=https://i.ibb.co/WP0KMFf/UpCycle.png" alt="1-removebg-preview" border="0" width="5%">
+            <h1>UpCycle.</h1>
+            <nav>
+                <ul>
+                    <li><a href="/#home">Home</a></li>
+                    <li><a href="#hero-about">About Us</a></li>
+                    <li><a href="/#text-misi">UpCycle. Crafts</a></li>
+                    <li id="waste"><a href="/#text-blog">WasteNow</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <img src="https://i.ibb.co/2ZkhzKH/bg2.jpg" alt="Capture1" border="0" id="hero">
+        <div id="hero-greeting">
+            <h1>UpCycle.</h1>
+            <p id="description">Meningkatkan Kesadaran Lingkungan dengan 
+                UpCycle., Membuka Pintu Menuju<br>Transformasi Sampah 
+                Menjadi Harta dan Membangun Lingkungan yang Lebih Bersih 
+                dan<br>Lebih Hijau </p>
+            <br>
+            <a id="link" href="https://skilvul.com">Visit Skillvul !</a>
+            <br>
+        </div>
+        </section>
+    </main>
+
+    <main id="about1">
+        <section id="about">
+            <div id="about-text">
+                <h1>Apa itu UpCycle.</h1>
+                <p>Sebagai perusahaan bank sampah kekinian, UpCycle.<br> memiliki misi untuk memperbaiki lingkungan dengan<br> mengajak masyarakat untuk mengoptimalkan potensi<br> sampah dan membantu mengurangi dampak negatif<br> sampah terhadap lingkungan. Dengan mengoptimalkan<br> Bank Sampah, UpCycle. Berusaha memberikan<br> pengetahuan pengolahan kembali sampah yang dapat di<br> daur ulang menjadi bahan yang berguna bagi masyarakat.</p>
+                <br>
+            </div>
+
+            <div id="about-gambar">
+                <img src="https://i.ibb.co/48RvCdX/foto1.jpg">
+            </div>
+        </section>
+    </main>
+
+    <main id="portofolio">
+        <section id="portofolio-sec">
+            <h1>Lihat Pekerjaan UpCycle.</h1>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img id="img-card" src="https://i.ibb.co/mXqrzXR/ft1.jpg" width="100%">
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <img id="img-card" src="https://i.ibb.co/Yc3kHLH/ft2.jpg" alt="" width="100%">
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <img id="img-card" src="https://i.ibb.co/zJ7VY7Y/ft3.jpg" alt="" width="100%">
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <img id="img-card" src="https://i.ibb.co/rpnSN3b/ft4.jpg" alt="" width="100%">
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <div>
+            <iframe id="hero-vid" src="https://www.youtube.com/embed/I13_hwqm2Zo" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </main> 
+
+    <div>
+        <main id="hero-crafs">
+            <section id="hero3">
+                <div id="hero-greeting3">
+                    <h1>UpCycle. Crafts</h1>
+                    <p>UpCycle. Crafts adalah fitur UpCycle. yang berisi tentang DIY Upcycling yang ramah<br>
+                        lingkungan dan memberikan ide-ide kreatif untuk mengubah limbah menjadi barang-<br>barang 
+                        yang berguna dan memberikan dampak positif terhadap lingkungan dengan<br>cara yang mudah 
+                        dan terjangkau.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <main>
+        <div id="hero-bantuan">
+            <form id="hero-form">
+                <input id="name" type="text" placeholder="Nama" />
+                <input id="city" type="text" placeholder="City" />
+                <input id="email" type="email" placeholder="Email" />
+                <input id="zip-code" type="number" placeholder="Zip Code" />
+                
+                <label for="status" id="check">
+                    <br>Dengan ini saya menyatakan data yang diisi pada form ini adalah benar
+                  dan telah sesuai
+                </label>
+          
+                <input id="status" type="checkbox"/>
+                <button type="submit" id="submit-form" type="submit">Kirim</button>
+          
+                
+                
+                <div id="warning"></div>
+              </form>
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+
+        <p id="footer">Created By Nurmawati<br>
+
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+==============================================================================================================================================
+
+
+
+const handleGetFormData = () => ({
+  name: document.getElementById('name').value,
+  email: document.getElementById('email').value,
+  city: document.getElementById('city').value,
+  zipCode: document.getElementById('zip-code').value,
+  status: document.getElementById('status').checked,
+});
+
+function isNumber(num) {
+  if (isNaN(num)) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function checkboxIsChecked() {
+  if (document.getElementById('status').checked) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+
+const validateFormData = (obj) =>
+  obj && isNumber(obj.zipCode) && checkboxIsChecked();
+
+function submit() {
+  if (validateFormData(handleGetFormData()) == false) {
+    return (document.getElementById("warning").innerHTML =
+      "Periksa form anda sekali lagi");
+  } else {
+    return (document.getElementById("warning").innerHTML = "");
+  }
+}
+
+
+
+========================================================================================================================================================
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+ }
+
+  body{
+      /* padding: 10px 50px; */
+      font-family:'Poppins', sans-serif;
+  }
+  
+
+  /* Tampilan Navbar */
+  header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding-right: 50px;
+      padding-top: -600px;
+      position: fixed;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: -50px;
+  }
+
+  header h1 {
+    margin-right: 0px;
+  }
+
+  header img{
+    margin-top: 0px;
+  }
+
+  main{
+      margin: 50px 0;
+  }
+  
+  nav ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin-top: 0px;
+      gap: 50px;  
+      margin-left: 200px;
+      padding-bottom: 0px;
+  }
+  
+  nav ul a{
+      text-decoration: none;
+      color: black;
+  }
+  
+
+  /* Tampilan Dasboard */
+  #hero{
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      width: 135%;
+  }
+  
+#hero-greeting{
+      margin-top: -300px;
+      
+  }
+
+  #hero-greeting h1{
+      margin-top: -420px;
+      margin-left: 70px;
+      color: white;
+      
+  }
+  #hero-greeting p{
+      margin-bottom: 15px;
+      margin-left: 70px;
+      color: white;
+  }
+  #link{
+    color: white;
+    margin-left: 70px;
+  }
+
+  /* Tampilan About */
+  #about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+    padding-top: 300px;
+    padding-bottom: 100px;
+  }
+
+  #about h1 {
+    margin-bottom: 15px;
+  }
+
+  #about-text {
+    margin-left: 100px;
+  }
+
+  #about-text h1 {
+    font-size: 40px;
+    margin-right: -800px;
+    margin-left: 0px;
+  }
+
+  #about-text p {
+    padding-left: -300px;
+    margin-right: -500px;
+    text-align: left;
+  }
+
+  #about-gambar img {
+    border-radius: 5%;
+    width: 45%;
+    margin-left: 500px;
+    margin-top: 0px;
+  }
+
+  /* tentang misi */
+
+  #portofolio-sec h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .column {
+    float: left;
+    width: 15%;
+    padding: 0 30px;
+  }
+
+  .row {
+    margin: 0 -5px;
+    margin-left: 155px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .card {
+    text-align: center;
+    padding: 0px 0px;
+  }
+
+  #img-card{
+      border-radius: 36px;
+      width: 120%;
+      height: 150px;
+  }
+#portofolio-sec h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .column {
+    float: left;
+    width: 15%;
+    padding: 0 30px;
+  }
+
+  .row {
+    margin: 0 -5px;
+    margin-left: 155px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .card {
+    text-align: center;
+    padding: 0px 0px;
+  }
+
+  #img-card{
+      border-radius: 36px;
+      width: 120%;
+      height: 150px;
+  }
+
+  /* Blog */
+
+  #text-blog{
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  #hero-blog img{
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  #hero-blog h1{
+    margin-left: 470px;
+    margin-top: -260px;
+
+  }
+/*  */
+  #hero-blog-1 img{
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 150px;
+  }
+  #hero-blog-1 h1{
+    margin-left: 470px;
+    margin-top: -260px;
+
+  }
+  #hero-blog button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  color: black;
+  padding: 10px 52px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 100px;
+  margin-left: 470px;
+  cursor: pointer;
+  }
+
+  #hero-blog-1 button {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+    color: white;
+    padding: 10px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 100px;
+    margin-left: 470px;
+    cursor: pointer;
+    }
+    
+    /*  */
+  #hero3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  #hero-greeting3 {
+    margin-left: 330px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  #hero-greeting3 h1{
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  #hero-greeting3 p{
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0px;
+  }
+    /*  */
+
+    #hero-form{
+      margin-top: -50px;
+      margin-left: 300px;
+      color: white;
+     
+    }
+#check{
+  color: black;
+}
+
+   input{
+      width: 360px;
+      height: 30px;
+      border-radius: 10px;
+      border: 2px solid #237804;
+      
+     }
+
+     #status{
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 350px;
+     }
+    
+     #submit-form{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    color: rgb(0, 0, 0);
+    padding: 10px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: -150px;
+    cursor: pointer;
+    }
+
+  #footer{
+    padding: 20px 0px; 
+    background-color: #1F1F1F; 
+    text-align: center; 
+    color: white;
+  }

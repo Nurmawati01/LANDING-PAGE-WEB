@@ -1,0 +1,462 @@
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap");
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 100px;
+    margin-left: -50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+  }
+
+  header h1 {
+    margin-right: 300px;
+  }
+
+  header img {
+    border-radius: 100%;
+    margin-right: 0px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    /* padding: 10px; */
+  }
+
+  nav ul li:hover {
+    text-decoration: underline;
+  }
+
+  nav ul img {
+    margin-left: -130px;
+    margin-right: -50px;
+  }
+
+  nav ul li {
+    margin-left: 0px;
+    margin-right: 120px;
+    padding-left: 0px;
+  }
+
+
+  /* main {
+      margin: 50px 0;
+  } */
+
+  main img {
+    width: 100%;
+  }
+
+  #home {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* style dashboard */
+  #dashboard {
+    margin-top: 0px;
+    margin-bottom: 200px;
+  }
+
+  /* div main img {
+      margin-top: -30px;
+  } */
+
+  #hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -290px;
+  }
+
+  #hero-greeting {
+    margin-left: 240px;
+    margin-top: -500px;
+  }
+
+  #hero-greeting h1 {
+    /* margin-bottom: 15px;
+      font-size: 50px; */
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+
+  #hero-greeting p {
+    /* margin-bottom: 30px;
+      font-size: 20px; */
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  #hero-button button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 0px;
+  }
+
+  #hero-button button:hover {
+    background-color: rgb(195, 195, 222);
+  }
+
+  #btn-regisNow {
+    margin-left: 220px;
+    padding: 5px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+  }
+
+  #btn-loginNow {
+    margin-left: 10px;
+    padding: 5px 30px;
+    background-color: #52c41a;
+    color: black;
+    border: 2px solid #1890ff;
+    border-radius: 5px;
+    color: white;
+  }
+
+  /* style about */
+
+  #about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #about h1 {
+    margin-bottom: 15px;
+  }
+
+  #about-text {
+    margin-left: 100px;
+  }
+
+  #about-text h1 {
+    font-size: 40px;
+    margin-right: -800px;
+    margin-left: 0px;
+  }
+
+  #about-text p {
+    padding-left: -300px;
+    margin-right: -500px;
+    text-align: left;
+  }
+
+  #about-gambar img {
+    border-radius: 5%;
+    width: 45%;
+    margin-left: 500px;
+    margin-top: 0px;
+  }
+
+  /* Style Portofolio */
+  #portofolio-sec h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .column {
+    float: left;
+    width: 15%;
+    padding: 0 30px;
+  }
+
+  .row {
+    margin: 0 -5px;
+    margin-left: 155px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .card {
+    text-align: center;
+    padding: 0px 0px;
+  }
+
+  #img-card{
+      border-radius: 36px;
+      width: 120%;
+      height: 150px;
+  }
+
+
+  /* style tentang mereka */
+  main section h1{
+    margin-left: 400px;
+  }
+
+  .column1 {
+    float: left;
+    width: 15%;
+    padding: 0 10px;
+  }
+
+  .row1 {
+    margin: 0 -5px;
+    margin-left: 130px;
+  }
+
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column1 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .card1 {
+    /* text-align: left; */
+    padding: 10px 5px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #237804;
+  }
+
+  .card1 p {
+    text-align: left;
+    font-size: 12px;
+  }
+  .card1 h2 {
+    text-align: left;
+    font-size: 12px;
+    margin-top: -23px;
+    margin-left: 25px;
+  }
+  .card1 img {
+    width: 10%;
+  }
+
+  /* style mulai perubahan */
+  #hero-perubahan img{
+    height: 50%;
+  }
+
+  #hero2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -220px;
+  }
+
+  #hero-greeting2 {
+    margin-left: 240px;
+    margin-top: -150px;
+  }
+
+  #hero-greeting2 h1 {
+    /* margin-bottom: 15px;
+      font-size: 50px; */
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  #hero-greeting2 p {
+    /* margin-bottom: 30px;
+      font-size: 20px; */
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  #btn-regisNow2 {
+    margin-left: 220px;
+    padding: 5px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+  }
+
+  #btn-loginNow2 {
+    margin-left: 10px;
+    padding: 5px 30px;
+    background-color: #52c41a;
+    color: black;
+    border: 2px solid #1890ff;
+    border-radius: 5px;
+    color: white;
+  }
+
+
+  #hero3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -200px;
+  }
+
+  #hero-greeting3 {
+    margin-left: 330px;
+    margin-top: 500px;
+    margin-bottom: 50px;
+  }
+  #hero-greeting3 h1{
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  #hero-greeting3 p{
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+
+  .column2 {
+    float: left;
+    width: 15%;
+    padding: 0 0px;
+    padding-right: 0px;
+    margin-left: 30px;
+  }
+
+  .row2 {
+    margin: 0 -5px;
+    margin-left: 130px;
+    margin-bottom: 0px;
+  }
+
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .card2 {
+    /* text-align: left; */
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #237804;
+    width: 130%;
+  }
+
+  .card2 p {
+    text-align: left;
+    font-size: 10px;
+    margin-top: -100px;
+  }
+  /* .card2 h1 {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 100px;
+  } */
+  .card2 img {
+    width: 10%;
+  }
+
+
+  #hero-greeting4 {
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #hero-greeting4 h1 {
+    margin-left: 370px;
+    font-size: 50px;
+  }
+  #hero-greeting4 h2 {
+    margin-left: 290px;
+  }
+
+
+  #hero-form{
+    margin-top: 100px;
+    background-color: #d9d9d9;
+  }
+  #form-saya{
+    margin-left: 450px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #form-saya h1{
+    margin-left: 80px;
+  }
+  form input{
+  width: 360px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #237804;
+  }
+  form #status{
+    width: 20px;
+    border: 2px solid #237804;
+  }
+  #submit-form{
+    padding: 10px 30px;
+    font-size: 15px;
+    border: 1px solid #237804;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 120px;
+  }
